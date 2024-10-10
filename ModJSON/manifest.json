@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2, // Use version 2 instead of 3 for better compatibility with background scripts
+  "name": "ModJSONResponses",
+  "version": "1.0",
+  "description": "Replaces false values with true in JSON responses.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://*/*", 
+    "http://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]  // Replace service_worker with scripts
+  },
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
